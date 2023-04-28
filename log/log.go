@@ -48,7 +48,7 @@ func init() {
 		log = prodLog.Sugar()
 		return
 	}
-	fileName := config.FilePath + config.FileName
+	fileName := config.FilePath + "/" + config.FileName
 	level := getLoggerLevel(config.Level)
 	syncWriter := zapcore.AddSync(&lumberjack.Logger{
 		Filename:   fileName,

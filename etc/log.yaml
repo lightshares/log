@@ -1,4 +1,4 @@
 log:
-  type: console
+  type: file
   fileName: app.log
   filePath: logs
